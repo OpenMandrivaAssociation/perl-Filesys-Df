@@ -56,7 +56,6 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/lib/debug/usr/lib/perl5/vendor_perl/5.10.0/x86_64-linux-thread-multi/auto/Filesys/Df/Df.so.debug
 /usr/src/debug/Filesys-Df-0.92/Df.c
 /usr/src/debug/Filesys-Df-0.92/Df.xs
 
