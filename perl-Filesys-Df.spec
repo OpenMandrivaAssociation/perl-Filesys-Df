@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Disk free based on Filesys::Statvfs
 License:    GPL+ or Artistic
@@ -56,6 +56,4 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/src/debug/Filesys-Df-0.92/Df.c
-/usr/src/debug/Filesys-Df-0.92/Df.xs
 
