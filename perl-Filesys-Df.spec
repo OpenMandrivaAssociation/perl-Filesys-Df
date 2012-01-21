@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 8
+Release:    %mkrel 9
 
 Summary:    Disk free based on Filesys::Statvfs
 License:    GPL+ or Artistic
