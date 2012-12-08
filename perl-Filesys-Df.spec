@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 10
+Release:    11
 
 Summary:    Disk free based on Filesys::Statvfs
 License:    GPL+ or Artistic
@@ -57,3 +57,52 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorlib/*
 
+
+
+%changelog
+* Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 0.920.0-10mdv2012.0
++ Revision: 765266
+- rebuilt for perl-5.14.2
+
+* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 0.920.0-9
++ Revision: 763766
+- rebuilt for perl-5.14.x
+- cleanup temporary deps, this was added in perl-devel instead
+
+* Fri Jan 20 2012 Oden Eriksson <oeriksson@mandriva.com> 0.920.0-8
++ Revision: 763246
+- force it
+- rebuild
+
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.920.0-7
++ Revision: 667149
+- mass rebuild
+
+* Sun Apr 03 2011 Funda Wang <fwang@mandriva.org> 0.920.0-6
++ Revision: 650048
+- rebuild
+
+* Sun Aug 01 2010 Funda Wang <fwang@mandriva.org> 0.920.0-5mdv2011.0
++ Revision: 564437
+- rebuild for perl 5.12.1
+
+* Tue Jul 20 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.920.0-4mdv2011.0
++ Revision: 555285
+- rebuild
+
+  + Jérôme Quelin <jquelin@mandriva.org>
+    - rebuild for 5.12
+
+* Tue Oct 20 2009 Thierry Vignaud <tv@mandriva.org> 0.920.0-2mdv2010.1
++ Revision: 458326
+- do not package debug files
+
+* Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 0.920.0-1mdv2010.0
++ Revision: 395199
+- removing file already packaged
+- package is arch-dependant
+- import perl-Filesys-Df
+
+
+* Sun Jul 12 2009 cpan2dist 0.92-1mdv
+- initial mdv release, generated with cpan2dist
