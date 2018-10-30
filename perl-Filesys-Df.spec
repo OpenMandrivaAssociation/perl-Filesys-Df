@@ -4,7 +4,7 @@
 Summary:	Disk free based on Filesys::Statvfs
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	26
+Release:	27
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
