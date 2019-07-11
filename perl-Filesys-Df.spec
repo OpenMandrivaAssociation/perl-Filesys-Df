@@ -4,7 +4,7 @@
 Summary:	Disk free based on Filesys::Statvfs
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	27
+Release:	28
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -36,13 +36,10 @@ set the block size to 1.
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
 
-%make
-
-%check
-%make test
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes README
