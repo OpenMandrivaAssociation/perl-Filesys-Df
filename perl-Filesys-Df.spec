@@ -1,14 +1,12 @@
 %define modname	Filesys-Df
-%define modver	0.92
-
 Summary:	Disk free based on Filesys::Statvfs
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	30
+Version:	0.92
+Release:	31
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Filesys/%{modname}-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/Filesys/%{modname}-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 
@@ -32,7 +30,7 @@ cause the function to return the values in 1k blocks. If you want bytes,
 set the block size to 1.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%setup -qn %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
